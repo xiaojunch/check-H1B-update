@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 import datetime
 import time
 
+
 def sendEmail():
     # Import smtplib for the actual sending function
     import smtplib
@@ -26,7 +27,6 @@ def sendEmail():
     s = smtplib.SMTP('mail.google.com')
     s.send_message(msg)
     s.quit()
-
 
 
 def checkUpdate():
